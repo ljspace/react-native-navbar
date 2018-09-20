@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StatusBar, Text, View, Platform } from "react-native";
 import PropTypes from "prop-types";
-import ViewPropTypes from "./lib";
+import { ViewPropTypes } from "./lib";
 
 import NavbarButton from "./NavbarButton";
 import styles from "./styles";

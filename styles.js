@@ -1,5 +1,7 @@
+import { isIphoneX } from "./lib";
+
 const NAV_BAR_HEIGHT = 50;
-const STATUS_BAR_HEIGHT = 20;
+const STATUS_BAR_HEIGHT = isIphoneX() ? 44 : 20;
 
 module.exports = {
   navBarContainer: {
