@@ -1,7 +1,10 @@
 import { isIphoneX } from "./lib";
+import { Platform } from "react-native";
 
-const NAV_BAR_HEIGHT = 50;
-const STATUS_BAR_HEIGHT = isIphoneX() ? 44 : 20;
+let noIOS = Platform.OS !== "ios";
+
+const NAV_BAR_HEIGHT = noIOS ? 50 : 44;
+const STATUS_BAR_HEIGHT = noIOS ? 20 : isIphoneX() ? 44 : 20;
 
 module.exports = {
   navBarContainer: {
